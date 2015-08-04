@@ -24,7 +24,7 @@ RUN apt-get install -y nano wget dialog net-tools
 RUN apt-get install -y nginx  
 
 # Download content
-ADD http://stabilitytech.com/downloads/HTML5video.tar /usr/share/nginx/html
+ADD http://stabilitytech.com/downloads/HTML5video.tar /usr/share/nginx/html/HTML5video.tar
 
 # extract content
 RUN tar xvf /usr/share/nginx/html/HTML5video.tar -C /usr/share/nginx/html
