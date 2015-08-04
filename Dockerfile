@@ -24,10 +24,10 @@ RUN apt-get install -y nano wget dialog net-tools
 RUN apt-get install -y nginx  
 
 # Download content
-ADD http://stabilitytech.com/downloads/HTML5video.tar /usr/share/nginx/www
+ADD http://stabilitytech.com/downloads/HTML5video.tar /usr/share/nginx/html
 
 # extract content
-RUN tar xvf /usr/share/nginx/www/HTML5video.tar -C /usr/share/nginx/www
+RUN tar xvf /usr/share/nginx/html/HTML5video.tar -C /usr/share/nginx/html
 
 # Remove the default Nginx configuration file
 #RUN rm -v /etc/nginx/nginx.conf
